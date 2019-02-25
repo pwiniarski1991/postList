@@ -1,0 +1,8 @@
+<ul class="posts" *ngIf="posts$">
+  <li class="post" *ngFor="let post of posts$">
+    <h2>{{post.title}}</h2>
+    <!-- <div [innerHTML]="post.content">
+    </div> -->
+    <app-comment [post]="post"></app-comment>
+  </li>
+</ul>

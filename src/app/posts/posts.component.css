@@ -1,0 +1,12 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px 0;
+}
+
+div figure, div img {
+    display: block !important;
+    max-width: 100% !important;
+}

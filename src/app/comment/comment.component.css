@@ -1,0 +1,37 @@
+.comment {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: .8rem;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+blockquote {
+    position: relative;
+    display: flex;
+    width: fit-content;
+}
+
+blockquote::before, blockquote::after {
+    position: absolute;
+    content: "\201C";
+}
+
+blockquote::before {
+    left: -10px;
+}
+
+blockquote::after {
+    right: -10px;
+}
+
+.author {
+    display: flex;
+    margin: 5px 0;
+    font-style: normal;
+}
+
+.author * {
+    padding: 0 10px;
+}

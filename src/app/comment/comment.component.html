@@ -1,0 +1,10 @@
+<div *ngIf="comment$" class="comment">
+    <blockquote>
+        {{comment$.content | stripHTML}};
+    </blockquote>
+    <div class="author">
+        <span>{{comment$.author.name}}</span>
+        <span>{{comment$.date | date}}</span>
+        <img [src]="comment$.author.avatar_URL" [alt]="comment$.author.name">
+    </div>
+</div>
